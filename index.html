@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch-a-Sketch</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="js/script.js" defer></script>
+  </head>
+
+  <body>
+    <div class = heading>
+    <div class = title>Etch-a-Sketch</div>
+    </div> 
+<div class = selection>
+    <label for="Grid Size" class = "gridText">Number of Squares per Side:</label>
+
+    <input type="number" id="grid_Size" value= "16"
+       min="10" max="100">
+    <button onclick="changeSize()">Try it</button>
+
+  <div class = controls>
+    <div class="colorSelection">
+      <span>On-Hover Color:</span>
+      <input
+        type="color"
+        class="colorImput"
+        value="#101010"
+      />
+    </div>
+
+    <div class="clickSelection">
+      <span>On-Click Color:</span>
+      <input
+        type="color"
+        class="clickImput"
+        value="#0000FF"
+      />
+    </div>
+  
+
+    <div class="switch" id= "switchID">
+    <label class="rainbowSwitch">
+      <input type="checkbox" class = "switch_Box">
+      <span class="switchLabel">Rainbow!</span>
+      <div class="switchSlider">
+        <div class="switchSliderDot"></div>
+      </div>
+    </label>
+    </div>
+  </div>
+</div> 
+
+<div class = pad> 
+</div>
+ 
+ <div class = footer>
+  By J.AUGS, 2022
+ </div>
+
+</body>
+</html>
+
